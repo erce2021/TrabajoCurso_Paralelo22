@@ -33,25 +33,41 @@ namespace Borrador
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.menuButton = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.QContainer = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnQ = new System.Windows.Forms.Button();
+            this.btnQuienes = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnMision = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.BContainer = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.CContainer = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnNuestraEmpresa = new System.Windows.Forms.Button();
             this.IContainer = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.IButton = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.btnIntegrantes = new System.Windows.Forms.Button();
+            this.BContainer = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btnPagos = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.btnRetiros = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.BtnCréditos = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.btnTransferencias = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.BButton = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.btnCuentas = new System.Windows.Forms.Button();
+            this.CContainer = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnTelepagos = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnC = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnMapa = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.QTimer = new System.Windows.Forms.Timer(this.components);
             this.CTimer = new System.Windows.Forms.Timer(this.components);
@@ -61,30 +77,18 @@ namespace Borrador
             this.panelImagen = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.menuButton = new System.Windows.Forms.PictureBox();
-            this.btnQ = new System.Windows.Forms.Button();
-            this.btnQuienes = new System.Windows.Forms.Button();
-            this.btnMision = new System.Windows.Forms.Button();
-            this.btnNuestraEmpresa = new System.Windows.Forms.Button();
-            this.btnPagos = new System.Windows.Forms.Button();
-            this.btnRetiros = new System.Windows.Forms.Button();
-            this.BtnCréditos = new System.Windows.Forms.Button();
-            this.btnTransferencias = new System.Windows.Forms.Button();
-            this.BButton = new System.Windows.Forms.Button();
-            this.btnCuentas = new System.Windows.Forms.Button();
-            this.btnTelepagos = new System.Windows.Forms.Button();
-            this.btnC = new System.Windows.Forms.Button();
-            this.btnMapa = new System.Windows.Forms.Button();
-            this.IButton = new System.Windows.Forms.Button();
-            this.btnIntegrantes = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.QContainer.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.IContainer.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.BContainer.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -96,11 +100,7 @@ namespace Borrador
             this.panel10.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.IContainer.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel18.SuspendLayout();
             this.panelImagen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,6 +128,17 @@ namespace Borrador
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 146);
             this.panel1.TabIndex = 0;
+            // 
+            // menuButton
+            // 
+            this.menuButton.Image = global::Borrador.Properties.Resources.menu1;
+            this.menuButton.Location = new System.Drawing.Point(23, 61);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(42, 42);
+            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.menuButton.TabIndex = 2;
+            this.menuButton.TabStop = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // label1
             // 
@@ -164,6 +175,40 @@ namespace Borrador
             this.panel2.Size = new System.Drawing.Size(250, 44);
             this.panel2.TabIndex = 1;
             // 
+            // btnQ
+            // 
+            this.btnQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.btnQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQ.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQ.Image = global::Borrador.Properties.Resources.llamada_telefonica__4_;
+            this.btnQ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQ.Location = new System.Drawing.Point(-16, -13);
+            this.btnQ.Name = "btnQ";
+            this.btnQ.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQ.Size = new System.Drawing.Size(281, 70);
+            this.btnQ.TabIndex = 3;
+            this.btnQ.Text = "              ¿Quiénes somos?";
+            this.btnQ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQ.UseVisualStyleBackColor = false;
+            this.btnQ.Click += new System.EventHandler(this.btnQ_Click);
+            // 
+            // btnQuienes
+            // 
+            this.btnQuienes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuienes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuienes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuienes.Image = global::Borrador.Properties.Resources.llamada_telefonica__4_;
+            this.btnQuienes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuienes.Location = new System.Drawing.Point(-16, -14);
+            this.btnQuienes.Name = "btnQuienes";
+            this.btnQuienes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQuienes.Size = new System.Drawing.Size(281, 70);
+            this.btnQuienes.TabIndex = 2;
+            this.btnQuienes.Text = "              ¿Quiénes somos?";
+            this.btnQuienes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuienes.UseVisualStyleBackColor = true;
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.btnMision);
@@ -172,6 +217,22 @@ namespace Borrador
             this.panel6.Size = new System.Drawing.Size(247, 44);
             this.panel6.TabIndex = 7;
             // 
+            // btnMision
+            // 
+            this.btnMision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMision.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMision.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMision.Image = global::Borrador.Properties.Resources.comprobado;
+            this.btnMision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMision.Location = new System.Drawing.Point(-16, -14);
+            this.btnMision.Name = "btnMision";
+            this.btnMision.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnMision.Size = new System.Drawing.Size(281, 70);
+            this.btnMision.TabIndex = 2;
+            this.btnMision.Text = "             Misión, visión y valores ";
+            this.btnMision.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMision.UseVisualStyleBackColor = true;
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnNuestraEmpresa);
@@ -179,6 +240,86 @@ namespace Borrador
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(247, 44);
             this.panel7.TabIndex = 6;
+            // 
+            // btnNuestraEmpresa
+            // 
+            this.btnNuestraEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuestraEmpresa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuestraEmpresa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNuestraEmpresa.Image = global::Borrador.Properties.Resources.comprobado;
+            this.btnNuestraEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuestraEmpresa.Location = new System.Drawing.Point(-16, -14);
+            this.btnNuestraEmpresa.Name = "btnNuestraEmpresa";
+            this.btnNuestraEmpresa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnNuestraEmpresa.Size = new System.Drawing.Size(281, 70);
+            this.btnNuestraEmpresa.TabIndex = 2;
+            this.btnNuestraEmpresa.Text = "             Nuestra empresa";
+            this.btnNuestraEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuestraEmpresa.UseVisualStyleBackColor = true;
+            this.btnNuestraEmpresa.Click += new System.EventHandler(this.btnNuestraEmpresa_Click);
+            // 
+            // IContainer
+            // 
+            this.IContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.IContainer.Controls.Add(this.panel5);
+            this.IContainer.Controls.Add(this.panel18);
+            this.IContainer.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IContainer.Location = new System.Drawing.Point(3, 205);
+            this.IContainer.MaximumSize = new System.Drawing.Size(250, 108);
+            this.IContainer.MinimumSize = new System.Drawing.Size(250, 44);
+            this.IContainer.Name = "IContainer";
+            this.IContainer.Size = new System.Drawing.Size(250, 44);
+            this.IContainer.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.panel5.Controls.Add(this.IButton);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(250, 47);
+            this.panel5.TabIndex = 3;
+            // 
+            // IButton
+            // 
+            this.IButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.IButton.Image = global::Borrador.Properties.Resources.llamada_telefonica__7_;
+            this.IButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IButton.Location = new System.Drawing.Point(-15, -14);
+            this.IButton.Name = "IButton";
+            this.IButton.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.IButton.Size = new System.Drawing.Size(283, 70);
+            this.IButton.TabIndex = 2;
+            this.IButton.Text = "              Información ";
+            this.IButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IButton.UseVisualStyleBackColor = true;
+            this.IButton.Click += new System.EventHandler(this.IButton_Click);
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.btnIntegrantes);
+            this.panel18.Location = new System.Drawing.Point(3, 53);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(247, 44);
+            this.panel18.TabIndex = 6;
+            // 
+            // btnIntegrantes
+            // 
+            this.btnIntegrantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIntegrantes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIntegrantes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIntegrantes.Image = global::Borrador.Properties.Resources.comprobado;
+            this.btnIntegrantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIntegrantes.Location = new System.Drawing.Point(-16, -14);
+            this.btnIntegrantes.Name = "btnIntegrantes";
+            this.btnIntegrantes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnIntegrantes.Size = new System.Drawing.Size(281, 70);
+            this.btnIntegrantes.TabIndex = 2;
+            this.btnIntegrantes.Text = "             Integrantes";
+            this.btnIntegrantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIntegrantes.UseVisualStyleBackColor = true;
             // 
             // BContainer
             // 
@@ -205,6 +346,22 @@ namespace Borrador
             this.panel12.Size = new System.Drawing.Size(247, 44);
             this.panel12.TabIndex = 9;
             // 
+            // btnPagos
+            // 
+            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPagos.Image = ((System.Drawing.Image)(resources.GetObject("btnPagos.Image")));
+            this.btnPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagos.Location = new System.Drawing.Point(-16, -14);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnPagos.Size = new System.Drawing.Size(281, 70);
+            this.btnPagos.TabIndex = 2;
+            this.btnPagos.Text = "             Pagos digitales";
+            this.btnPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagos.UseVisualStyleBackColor = true;
+            // 
             // panel16
             // 
             this.panel16.Controls.Add(this.btnRetiros);
@@ -212,6 +369,22 @@ namespace Borrador
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(247, 44);
             this.panel16.TabIndex = 10;
+            // 
+            // btnRetiros
+            // 
+            this.btnRetiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetiros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetiros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRetiros.Image = ((System.Drawing.Image)(resources.GetObject("btnRetiros.Image")));
+            this.btnRetiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRetiros.Location = new System.Drawing.Point(-16, -14);
+            this.btnRetiros.Name = "btnRetiros";
+            this.btnRetiros.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnRetiros.Size = new System.Drawing.Size(281, 70);
+            this.btnRetiros.TabIndex = 2;
+            this.btnRetiros.Text = "             Retiros";
+            this.btnRetiros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRetiros.UseVisualStyleBackColor = true;
             // 
             // panel9
             // 
@@ -221,6 +394,22 @@ namespace Borrador
             this.panel9.Size = new System.Drawing.Size(247, 44);
             this.panel9.TabIndex = 7;
             // 
+            // BtnCréditos
+            // 
+            this.BtnCréditos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCréditos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCréditos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnCréditos.Image = ((System.Drawing.Image)(resources.GetObject("BtnCréditos.Image")));
+            this.BtnCréditos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCréditos.Location = new System.Drawing.Point(-16, -14);
+            this.BtnCréditos.Name = "BtnCréditos";
+            this.BtnCréditos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.BtnCréditos.Size = new System.Drawing.Size(281, 70);
+            this.BtnCréditos.TabIndex = 2;
+            this.BtnCréditos.Text = "             Créditos";
+            this.BtnCréditos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCréditos.UseVisualStyleBackColor = true;
+            // 
             // panel14
             // 
             this.panel14.Controls.Add(this.btnTransferencias);
@@ -228,6 +417,22 @@ namespace Borrador
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(247, 44);
             this.panel14.TabIndex = 8;
+            // 
+            // btnTransferencias
+            // 
+            this.btnTransferencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransferencias.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTransferencias.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTransferencias.Image = ((System.Drawing.Image)(resources.GetObject("btnTransferencias.Image")));
+            this.btnTransferencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransferencias.Location = new System.Drawing.Point(-16, -14);
+            this.btnTransferencias.Name = "btnTransferencias";
+            this.btnTransferencias.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnTransferencias.Size = new System.Drawing.Size(281, 70);
+            this.btnTransferencias.TabIndex = 2;
+            this.btnTransferencias.Text = "             Transferencias";
+            this.btnTransferencias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransferencias.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -238,6 +443,24 @@ namespace Borrador
             this.panel3.Size = new System.Drawing.Size(250, 44);
             this.panel3.TabIndex = 3;
             // 
+            // BButton
+            // 
+            this.BButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.BButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BButton.Image = global::Borrador.Properties.Resources.llamada_telefonica__6_;
+            this.BButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BButton.Location = new System.Drawing.Point(-16, -14);
+            this.BButton.Name = "BButton";
+            this.BButton.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.BButton.Size = new System.Drawing.Size(281, 70);
+            this.BButton.TabIndex = 2;
+            this.BButton.Text = "              Banco de personas";
+            this.BButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BButton.UseVisualStyleBackColor = false;
+            this.BButton.Click += new System.EventHandler(this.BButton_Click);
+            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.btnCuentas);
@@ -245,6 +468,22 @@ namespace Borrador
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(247, 44);
             this.panel13.TabIndex = 6;
+            // 
+            // btnCuentas
+            // 
+            this.btnCuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCuentas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCuentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCuentas.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentas.Image")));
+            this.btnCuentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCuentas.Location = new System.Drawing.Point(-16, -14);
+            this.btnCuentas.Name = "btnCuentas";
+            this.btnCuentas.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCuentas.Size = new System.Drawing.Size(281, 70);
+            this.btnCuentas.TabIndex = 2;
+            this.btnCuentas.Text = "             Cuentas";
+            this.btnCuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCuentas.UseVisualStyleBackColor = true;
             // 
             // CContainer
             // 
@@ -268,6 +507,22 @@ namespace Borrador
             this.panel10.Size = new System.Drawing.Size(247, 44);
             this.panel10.TabIndex = 7;
             // 
+            // btnTelepagos
+            // 
+            this.btnTelepagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTelepagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTelepagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTelepagos.Image = global::Borrador.Properties.Resources.comprobado;
+            this.btnTelepagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTelepagos.Location = new System.Drawing.Point(-16, -14);
+            this.btnTelepagos.Name = "btnTelepagos";
+            this.btnTelepagos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnTelepagos.Size = new System.Drawing.Size(281, 70);
+            this.btnTelepagos.TabIndex = 2;
+            this.btnTelepagos.Text = "             Telepagos";
+            this.btnTelepagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTelepagos.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
@@ -277,6 +532,23 @@ namespace Borrador
             this.panel4.Size = new System.Drawing.Size(250, 47);
             this.panel4.TabIndex = 3;
             // 
+            // btnC
+            // 
+            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnC.Image = global::Borrador.Properties.Resources.llamada_telefonica__5_;
+            this.btnC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnC.Location = new System.Drawing.Point(-16, -14);
+            this.btnC.Name = "btnC";
+            this.btnC.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnC.Size = new System.Drawing.Size(281, 70);
+            this.btnC.TabIndex = 2;
+            this.btnC.Text = "              Canales de atención ";
+            this.btnC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
+            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.btnMapa);
@@ -285,35 +557,21 @@ namespace Borrador
             this.panel11.Size = new System.Drawing.Size(247, 44);
             this.panel11.TabIndex = 6;
             // 
-            // IContainer
+            // btnMapa
             // 
-            this.IContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
-            this.IContainer.Controls.Add(this.panel5);
-            this.IContainer.Controls.Add(this.panel18);
-            this.IContainer.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IContainer.Location = new System.Drawing.Point(3, 205);
-            this.IContainer.MaximumSize = new System.Drawing.Size(250, 108);
-            this.IContainer.MinimumSize = new System.Drawing.Size(250, 44);
-            this.IContainer.Name = "IContainer";
-            this.IContainer.Size = new System.Drawing.Size(250, 44);
-            this.IContainer.TabIndex = 9;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.panel5.Controls.Add(this.IButton);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 47);
-            this.panel5.TabIndex = 3;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.btnIntegrantes);
-            this.panel18.Location = new System.Drawing.Point(3, 53);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(247, 44);
-            this.panel18.TabIndex = 6;
+            this.btnMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMapa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMapa.Image = global::Borrador.Properties.Resources.comprobado;
+            this.btnMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMapa.Location = new System.Drawing.Point(-16, -14);
+            this.btnMapa.Name = "btnMapa";
+            this.btnMapa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnMapa.Size = new System.Drawing.Size(281, 70);
+            this.btnMapa.TabIndex = 2;
+            this.btnMapa.Text = "             Mapa de sucursales";
+            this.btnMapa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMapa.UseVisualStyleBackColor = true;
             // 
             // sidebarTimer
             // 
@@ -381,269 +639,6 @@ namespace Borrador
             this.label2.TabIndex = 3;
             this.label2.Text = "Cajero Online";
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // menuButton
-            // 
-            this.menuButton.Image = global::Borrador.Properties.Resources.menu1;
-            this.menuButton.Location = new System.Drawing.Point(23, 61);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(42, 42);
-            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.menuButton.TabIndex = 2;
-            this.menuButton.TabStop = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // btnQ
-            // 
-            this.btnQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.btnQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQ.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnQ.Image = global::Borrador.Properties.Resources.llamada_telefonica__4_;
-            this.btnQ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQ.Location = new System.Drawing.Point(-16, -13);
-            this.btnQ.Name = "btnQ";
-            this.btnQ.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnQ.Size = new System.Drawing.Size(281, 70);
-            this.btnQ.TabIndex = 3;
-            this.btnQ.Text = "              ¿Quiénes somos?";
-            this.btnQ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQ.UseVisualStyleBackColor = false;
-            this.btnQ.Click += new System.EventHandler(this.btnQ_Click);
-            // 
-            // btnQuienes
-            // 
-            this.btnQuienes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuienes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuienes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnQuienes.Image = global::Borrador.Properties.Resources.llamada_telefonica__4_;
-            this.btnQuienes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuienes.Location = new System.Drawing.Point(-16, -14);
-            this.btnQuienes.Name = "btnQuienes";
-            this.btnQuienes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnQuienes.Size = new System.Drawing.Size(281, 70);
-            this.btnQuienes.TabIndex = 2;
-            this.btnQuienes.Text = "              ¿Quiénes somos?";
-            this.btnQuienes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuienes.UseVisualStyleBackColor = true;
-            // 
-            // btnMision
-            // 
-            this.btnMision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMision.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMision.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMision.Image = global::Borrador.Properties.Resources.comprobado;
-            this.btnMision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMision.Location = new System.Drawing.Point(-16, -14);
-            this.btnMision.Name = "btnMision";
-            this.btnMision.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnMision.Size = new System.Drawing.Size(281, 70);
-            this.btnMision.TabIndex = 2;
-            this.btnMision.Text = "             Misión, visión y valores ";
-            this.btnMision.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMision.UseVisualStyleBackColor = true;
-            // 
-            // btnNuestraEmpresa
-            // 
-            this.btnNuestraEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuestraEmpresa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuestraEmpresa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNuestraEmpresa.Image = global::Borrador.Properties.Resources.comprobado;
-            this.btnNuestraEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuestraEmpresa.Location = new System.Drawing.Point(-16, -14);
-            this.btnNuestraEmpresa.Name = "btnNuestraEmpresa";
-            this.btnNuestraEmpresa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnNuestraEmpresa.Size = new System.Drawing.Size(281, 70);
-            this.btnNuestraEmpresa.TabIndex = 2;
-            this.btnNuestraEmpresa.Text = "             Nuestra empresa";
-            this.btnNuestraEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuestraEmpresa.UseVisualStyleBackColor = true;
-            this.btnNuestraEmpresa.Click += new System.EventHandler(this.btnNuestraEmpresa_Click);
-            // 
-            // btnPagos
-            // 
-            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPagos.Image = ((System.Drawing.Image)(resources.GetObject("btnPagos.Image")));
-            this.btnPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagos.Location = new System.Drawing.Point(-16, -14);
-            this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnPagos.Size = new System.Drawing.Size(281, 70);
-            this.btnPagos.TabIndex = 2;
-            this.btnPagos.Text = "             Pagos digitales";
-            this.btnPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagos.UseVisualStyleBackColor = true;
-            // 
-            // btnRetiros
-            // 
-            this.btnRetiros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRetiros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetiros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRetiros.Image = ((System.Drawing.Image)(resources.GetObject("btnRetiros.Image")));
-            this.btnRetiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRetiros.Location = new System.Drawing.Point(-16, -14);
-            this.btnRetiros.Name = "btnRetiros";
-            this.btnRetiros.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnRetiros.Size = new System.Drawing.Size(281, 70);
-            this.btnRetiros.TabIndex = 2;
-            this.btnRetiros.Text = "             Retiros";
-            this.btnRetiros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRetiros.UseVisualStyleBackColor = true;
-            // 
-            // BtnCréditos
-            // 
-            this.BtnCréditos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCréditos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCréditos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCréditos.Image = ((System.Drawing.Image)(resources.GetObject("BtnCréditos.Image")));
-            this.BtnCréditos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCréditos.Location = new System.Drawing.Point(-16, -14);
-            this.BtnCréditos.Name = "BtnCréditos";
-            this.BtnCréditos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.BtnCréditos.Size = new System.Drawing.Size(281, 70);
-            this.BtnCréditos.TabIndex = 2;
-            this.BtnCréditos.Text = "             Créditos";
-            this.BtnCréditos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCréditos.UseVisualStyleBackColor = true;
-            // 
-            // btnTransferencias
-            // 
-            this.btnTransferencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransferencias.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTransferencias.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTransferencias.Image = ((System.Drawing.Image)(resources.GetObject("btnTransferencias.Image")));
-            this.btnTransferencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTransferencias.Location = new System.Drawing.Point(-16, -14);
-            this.btnTransferencias.Name = "btnTransferencias";
-            this.btnTransferencias.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnTransferencias.Size = new System.Drawing.Size(281, 70);
-            this.btnTransferencias.TabIndex = 2;
-            this.btnTransferencias.Text = "             Transferencias";
-            this.btnTransferencias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTransferencias.UseVisualStyleBackColor = true;
-            // 
-            // BButton
-            // 
-            this.BButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.BButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BButton.Image = global::Borrador.Properties.Resources.llamada_telefonica__6_;
-            this.BButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BButton.Location = new System.Drawing.Point(-16, -14);
-            this.BButton.Name = "BButton";
-            this.BButton.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.BButton.Size = new System.Drawing.Size(281, 70);
-            this.BButton.TabIndex = 2;
-            this.BButton.Text = "              Banco de personas";
-            this.BButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BButton.UseVisualStyleBackColor = false;
-            this.BButton.Click += new System.EventHandler(this.BButton_Click);
-            // 
-            // btnCuentas
-            // 
-            this.btnCuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCuentas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCuentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCuentas.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentas.Image")));
-            this.btnCuentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCuentas.Location = new System.Drawing.Point(-16, -14);
-            this.btnCuentas.Name = "btnCuentas";
-            this.btnCuentas.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCuentas.Size = new System.Drawing.Size(281, 70);
-            this.btnCuentas.TabIndex = 2;
-            this.btnCuentas.Text = "             Cuentas";
-            this.btnCuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCuentas.UseVisualStyleBackColor = true;
-            // 
-            // btnTelepagos
-            // 
-            this.btnTelepagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTelepagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTelepagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTelepagos.Image = global::Borrador.Properties.Resources.comprobado;
-            this.btnTelepagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTelepagos.Location = new System.Drawing.Point(-16, -14);
-            this.btnTelepagos.Name = "btnTelepagos";
-            this.btnTelepagos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnTelepagos.Size = new System.Drawing.Size(281, 70);
-            this.btnTelepagos.TabIndex = 2;
-            this.btnTelepagos.Text = "             Telepagos";
-            this.btnTelepagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTelepagos.UseVisualStyleBackColor = true;
-            // 
-            // btnC
-            // 
-            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnC.Image = global::Borrador.Properties.Resources.llamada_telefonica__5_;
-            this.btnC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnC.Location = new System.Drawing.Point(-16, -14);
-            this.btnC.Name = "btnC";
-            this.btnC.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnC.Size = new System.Drawing.Size(281, 70);
-            this.btnC.TabIndex = 2;
-            this.btnC.Text = "              Canales de atención ";
-            this.btnC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnC.UseVisualStyleBackColor = true;
-            this.btnC.Click += new System.EventHandler(this.btnC_Click);
-            // 
-            // btnMapa
-            // 
-            this.btnMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMapa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMapa.Image = global::Borrador.Properties.Resources.comprobado;
-            this.btnMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMapa.Location = new System.Drawing.Point(-16, -14);
-            this.btnMapa.Name = "btnMapa";
-            this.btnMapa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnMapa.Size = new System.Drawing.Size(281, 70);
-            this.btnMapa.TabIndex = 2;
-            this.btnMapa.Text = "             Mapa de sucursales";
-            this.btnMapa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMapa.UseVisualStyleBackColor = true;
-            // 
-            // IButton
-            // 
-            this.IButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.IButton.Image = global::Borrador.Properties.Resources.llamada_telefonica__7_;
-            this.IButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IButton.Location = new System.Drawing.Point(-15, -14);
-            this.IButton.Name = "IButton";
-            this.IButton.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.IButton.Size = new System.Drawing.Size(283, 70);
-            this.IButton.TabIndex = 2;
-            this.IButton.Text = "              Información ";
-            this.IButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IButton.UseVisualStyleBackColor = true;
-            this.IButton.Click += new System.EventHandler(this.IButton_Click);
-            // 
-            // btnIntegrantes
-            // 
-            this.btnIntegrantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIntegrantes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIntegrantes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIntegrantes.Image = global::Borrador.Properties.Resources.comprobado;
-            this.btnIntegrantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIntegrantes.Location = new System.Drawing.Point(-16, -14);
-            this.btnIntegrantes.Name = "btnIntegrantes";
-            this.btnIntegrantes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnIntegrantes.Size = new System.Drawing.Size(281, 70);
-            this.btnIntegrantes.TabIndex = 2;
-            this.btnIntegrantes.Text = "             Integrantes";
-            this.btnIntegrantes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIntegrantes.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Borrador.Properties.Resources.icono_de_banco_de_cerdo_de_insercion_de_moneda_by_vexels1;
@@ -653,6 +648,11 @@ namespace Borrador
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // Inicio
             // 
@@ -670,10 +670,14 @@ namespace Borrador
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.QContainer.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.IContainer.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
             this.BContainer.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
@@ -685,12 +689,8 @@ namespace Borrador
             this.panel10.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.IContainer.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
             this.panelImagen.ResumeLayout(false);
             this.panelImagen.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

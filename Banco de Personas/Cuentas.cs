@@ -16,5 +16,55 @@ namespace Borrador.Banco_de_Personas
         {
             InitializeComponent();
         }
+
+        private void bunifuDatePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

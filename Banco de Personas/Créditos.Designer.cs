@@ -33,6 +33,8 @@ namespace Borrador.Banco_de_Personas
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Créditos));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.SubContainer = new System.Windows.Forms.Panel();
+            this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -48,11 +50,20 @@ namespace Borrador.Banco_de_Personas
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.SubContainer);
             this.bunifuPanel1.Location = new System.Drawing.Point(9, 10);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(638, 612);
             this.bunifuPanel1.TabIndex = 21;
+            // 
+            // SubContainer
+            // 
+            this.SubContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(112)))), ((int)(((byte)(58)))));
+            this.SubContainer.Location = new System.Drawing.Point(0, 11);
+            this.SubContainer.Name = "SubContainer";
+            this.SubContainer.Size = new System.Drawing.Size(638, 11);
+            this.SubContainer.TabIndex = 9;
             // 
             // Créditos
             // 
@@ -62,6 +73,7 @@ namespace Borrador.Banco_de_Personas
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "Créditos";
             this.Size = new System.Drawing.Size(657, 632);
+            this.bunifuPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -70,5 +82,6 @@ namespace Borrador.Banco_de_Personas
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private System.Windows.Forms.Panel SubContainer;
     }
 }

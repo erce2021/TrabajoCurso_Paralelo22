@@ -124,6 +124,9 @@
   <data name="cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picture-showing-pretty-woman-shopping-online-with-credit-card-woman-holding-credit-card-and-using-laptop-online-shopping-concept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picture-showing-pretty-woman-shopping-online-with-credit-card-woman-holding-credit-card-and-using-laptop-online-shopping-concept.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="llamada-telefonica (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llamada-telefonica (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,8 +136,8 @@
   <data name="icono-de-banco-de-cerdo-de-insercion-de-moneda-by_vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono-de-banco-de-cerdo-de-insercion-de-moneda-by_vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="comprobado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\comprobado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plant-growing-in-coins-glass-jar-for-money-on-green-grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plant-growing-in-coins-glass-jar-for-money-on-green-grass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="llamada-telefonica (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llamada-telefonica (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -144,6 +147,9 @@
   </data>
   <data name="llamada-telefonica (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llamada-telefonica (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comprobado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comprobado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="llamada-telefonica (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llamada-telefonica (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +169,7 @@
   <data name="icono-de-banco-de-cerdo-de-insercion-de-moneda-by_vexels1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono-de-banco-de-cerdo-de-insercion-de-moneda-by_vexels1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plant-growing-in-coins-glass-jar-for-money-on-green-grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plant-growing-in-coins-glass-jar-for-money-on-green-grass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picture-showing-pretty-woman-shopping-online-with-credit-card-woman-holding-credit-card-and-using-laptop-online-shopping-concept1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picture-showing-pretty-woman-shopping-online-with-credit-card-woman-holding-credit-card-and-using-laptop-online-shopping-concept1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
